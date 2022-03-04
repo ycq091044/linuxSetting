@@ -1,4 +1,5 @@
 ## gthub initialization and command
+---
 
 #### set name and email
 - git config --global user.name "ycq091044"
