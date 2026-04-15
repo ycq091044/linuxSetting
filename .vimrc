@@ -35,11 +35,13 @@ endif
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
+let &t_Co=256
+set background=dark
+
 if &t_Co > 2 || has("gui_running")
   syntax on
   set hlsearch
   colorscheme molokai
-  set background=dark
   set cursorline
   highlight Normal ctermbg=NONE
   highlight NonText ctermbg=NONE
@@ -92,7 +94,6 @@ set number
 set nobackup
 set wrap linebreak textwidth=0
 set laststatus=2
-let &t_Co=256
 
 if &diff
     set diffopt=filler,context:1000000
